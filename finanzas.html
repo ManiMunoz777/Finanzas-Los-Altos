@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Financieros</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a2e; /* Azul marino oscuro */
+            color: #ffffff; /* Blanco */
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        h1, h2, h3 {
+            font-weight: bold;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo negro traslúcido */
+            backdrop-filter: blur(10px); /* Desenfoque */
+        }
+        nav a {
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(to bottom, #1a1a2e, #2e2e42); /* Azul degradado */
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: #ffffff;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #d3d3d3; /* Gris claro */
+        }
+
+        /* Secciones generales */
+        section {
+            padding: 40px 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Servicios */
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service-card {
+            background-color: rgba(255, 255, 255, 0.1); /* Blanco traslúcido */
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .service-card p {
+            font-size: 1rem;
+            color: #d3d3d3; /* Gris claro */
+        }
+
+        /* Quiénes somos */
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+        .about-text {
+            flex: 1;
+            color: #ffffff;
+        }
+        .about-text p {
+            margin-bottom: 10px;
+        }
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contacto */
+        .contact {
+            text-align: center;
+        }
+        .contact p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+        .contact strong {
+            color: #ffffff;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px 40px;
+            background-color: rgba(0, 0, 0, 0.9); /* Fondo negro intenso */
+            text-align: center;
+            color: #d3d3d3; /* Gris claro */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><a href="#">Servicios Financieros</a></div>
+        <nav>
+            <a href="#services">Servicios</a>
+            <a href="#about">Nosotros</a>
+            <a href="#contact">Contáctanos</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>¡Obtén tu mejor solución financiera!</h1>
+        <p>Brindamos la mejor asesoría para tu futuro financiero: inversiones, crédito y seguros.</p>
+    </div>
+
+    <section id="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Planificación de Retiro</h3>
+                <p>Te ofrecemos un plan personalizado para asegurar un futuro financiero estable.</p>
+            </div>
+            <div class="service-card">
+                <h3>Asesoría en Inversiones</h3>
+                <p>Decisiones estratégicas para maximizar tus ganancias con expertos en inversiones.</p>
+            </div>
+            <div class="service-card">
+                <h3>Seguros Personalizados</h3>
+                <p>Diseñados para proteger lo que más valoras con opciones a tu medida.</p>
+            </div>
+            <div class="service-card">
+                <h3>Créditos Hipotecarios y PYME</h3>
+                <p>Soluciones crediticias para adquirir vivienda o impulsar tu negocio.</p>
+            </div>
+            <div class="service-card">
+                <h3>Crédito para Pensionados</h3>
+                <p>Ayudamos a pensionados del IMSS, ISSSTE y más a obtener financiamiento seguro.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>¿Quiénes Somos?</h2>
+        <div class="about">
+            <div class="about-text">
+                <p>En Servicios Financieros, nos enorgullece ofrecer pensión, seguros e hipotecas con un enfoque profesional.</p>
+                <p>Con más de 30 años de experiencia, ayudamos a alcanzar metas financieras con soluciones personalizadas.</p>
+            </div>
+            <div class="about-image">
+                <img src="file:///home/chronos/u-df328e0d4595d789c6afa6118d1ab62e7f86290c/MyFiles/Downloads/Captura%20de%20pantalla%202024-11-10%20215450%20(1).png" alt="Quiénes Somos">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contáctanos</h2>
+        <p><strong>Asesor:</strong> Alfonso Reyes</p>
+        <p><strong>Correo:</strong> aleja.rafa@hotmail.com</p>
+        <p><strong>Teléfono:</strong> 4741107767 - 4741180907</p>
+        <p><strong>Ubicación:</strong> Lagos de Moreno, Jalisco, México</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Servicios Financieros. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
